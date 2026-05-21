@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Jost:wght@300;400;500;600&display=swap');
+
+@import "tailwindcss";
+
+body{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  background:#F8F3EA;
+  font-family:'Jost',sans-serif;
+  overflow-x:hidden;
+}
