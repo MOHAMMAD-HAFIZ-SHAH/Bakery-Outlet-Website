@@ -1,12 +1,66 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Jost:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Jost:wght@300;400;500;600;700&display=swap');
 
 @import "tailwindcss";
 
-body{
+:root{
+  --cream:#F8F3EA;
+  --parchment:#EFE6D3;
+  --warmBrown:#5C3D1E;
+  --deepBrown:#3A2510;
+  --gold:#C4974A;
+  --goldLight:#E8C98A;
+}
+
+*{
   margin:0;
   padding:0;
   box-sizing:border-box;
-  background:#F8F3EA;
-  font-family:'Jost',sans-serif;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  background:var(--cream);
   overflow-x:hidden;
+  font-family:'Jost',sans-serif;
+  color:#2A1A08;
+}
+
+::-webkit-scrollbar{
+  width:8px;
+}
+
+::-webkit-scrollbar-thumb{
+  background:var(--warmBrown);
+}
+
+::-webkit-scrollbar-track{
+  background:var(--cream);
+}
+
+.container-custom{
+  width:100%;
+  max-width:1400px;
+  margin:auto;
+  padding-left:24px;
+  padding-right:24px;
+}
+
+.serif{
+  font-family:'Cormorant Garamond',serif;
+}
+
+.glass{
+  background:rgba(248,243,234,0.82);
+  backdrop-filter:blur(12px);
+}
+
+.gold-gradient{
+  background:linear-gradient(135deg,#C4974A,#E8C98A);
+}
+
+.hero-shadow{
+  box-shadow:0 20px 60px rgba(0,0,0,0.12);
 }
