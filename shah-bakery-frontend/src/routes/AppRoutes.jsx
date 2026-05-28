@@ -10,6 +10,9 @@ import Offers from "../pages/Offers/Offers";
 import OutletSelection from "../pages/OutletSelection/OutletSelection";
 import OrderTracking from "../pages/OrderTracking/OrderTracking";
 
+import Login from "../pages/Login/Login";
+import Register from "../pages/Register/Register";
+
 const AppRoutes = () => {
   return (
     <BrowserRouter>
@@ -33,6 +36,10 @@ const AppRoutes = () => {
         <Route path="/outlets" element={<OutletSelection />} />
 
         <Route path="/tracking" element={<OrderTracking />} />
+
+        <Route path="/login" element={<Login />} />
+
+        <Route path="/register" element={<Register />} />
 
       </Routes>
 
