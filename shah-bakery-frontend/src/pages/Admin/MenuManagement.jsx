@@ -1,6 +1,6 @@
 import MainLayout from "../../layouts/MainLayout";
-import MenuTable from "../../components/admin/MenuTable";
-import AddProductModal from "../../components/admin/AddProductModal";
+import MenuTable from "./MenuTable";
+import AddProductModal from "./AddProductModal";
 
 const MenuManagement = () => {
   return (

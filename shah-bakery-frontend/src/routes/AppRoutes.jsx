@@ -13,10 +13,15 @@ import OrderTracking from "../pages/OrderTracking/OrderTracking";
 import Login from "../pages/Login/Login";
 import Register from "../pages/Register/Register";
 
+import Dashboard from "../pages/Admin/Dashboard";
+import MenuManagement from "../pages/Admin/MenuManagement";
+import AdminLogin from "../pages/Admin/AdminLogin";
+
+import AdminProtectedRoute from "../pages/Admin/AdminProtectedRoute";
+
 const AppRoutes = () => {
   return (
     <BrowserRouter>
-
       <Routes>
 
         <Route path="/" element={<Home />} />
@@ -41,8 +46,30 @@ const AppRoutes = () => {
 
         <Route path="/register" element={<Register />} />
 
-      </Routes>
+        <Route
+          path="/secure-admin-login"
+          element={<AdminLogin />}
+        />
 
+        <Route
+          path="/admin/dashboard"
+          element={
+            <AdminProtectedRoute>
+              <Dashboard />
+            </AdminProtectedRoute>
+          }
+        />
+
+        <Route
+          path="/admin/menu"
+          element={
+            <AdminProtectedRoute>
+              <MenuManagement />
+            </AdminProtectedRoute>
+          }
+        />
+
+      </Routes>
     </BrowserRouter>
   );
 };

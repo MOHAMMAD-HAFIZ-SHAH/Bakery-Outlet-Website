@@ -3,6 +3,7 @@ import MainLayout from "../../layouts/MainLayout";
 import MenuHero from "./MenuHero";
 import CategorySidebar from "./CategorySidebar";
 import ProductGrid from "./ProductGrid";
+
 import FloatingCart from "../../components/cart/FloatingCart";
 
 const Menu = () => {
