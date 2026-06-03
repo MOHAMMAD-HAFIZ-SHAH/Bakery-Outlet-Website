@@ -1,5 +1,5 @@
 import MainLayout from "../../layouts/MainLayout";
-import OutletTable from "../../components/admin/OutletTable";
+import OutletTable from "./OutletTable";
 
 const OutletManagement = () => {
   return (

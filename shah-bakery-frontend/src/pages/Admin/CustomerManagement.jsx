@@ -1,5 +1,5 @@
 import MainLayout from "../../layouts/MainLayout";
-import CustomersTable from "../../components/admin/CustomersTable";
+import CustomersTable from "./CustomersTable";
 
 const CustomerManagement = () => {
   return (

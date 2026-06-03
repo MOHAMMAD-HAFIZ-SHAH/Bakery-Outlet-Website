@@ -1,5 +1,5 @@
 import MainLayout from "../../layouts/MainLayout";
-import AnalyticsChart from "../../components/admin/AnalyticsChart";
+import AnalyticsChart from "./AnalyticsChart";
 
 const Analytics = () => {
   return (
